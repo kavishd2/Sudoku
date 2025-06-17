@@ -11,7 +11,10 @@ public class sudokusolve
     	for (int i = 0; i < s; i++)
     		for (int j = 0; j < s; j++)
     			board[i][j] = kb.nextInt();
-    	sudoku b = new sudoku(board, s);
-    	System.out.print(b);
+    	sudoku solver = new sudoku(board, s);
+    	if (solver.solve())
+            System.out.print(solver);
+        else
+            System.out.println("No solution exists.");
     }
 }
