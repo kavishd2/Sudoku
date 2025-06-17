@@ -50,7 +50,6 @@ public class sudoku
     
     public String toString()
     {
-    	solve();
     	String s = "\n";
     	for (int i = 0; i < size; i++)
     	{
