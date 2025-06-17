@@ -1,7 +1,7 @@
 // Solves sudoku using backtracking. If there isn't a unique solution, will find one with ascending filled in numbers.
 public class sudoku 
 {
-	private int[][] board;
+    private int[][] board;
     private int size;
     
     public sudoku(int[][] b, int s) 
@@ -23,7 +23,7 @@ public class sudoku
     					if (isValid(i, j, c))
     					{
     						board[i][j] = c;
-    						if(solve() == true)
+    						if (solve() == true)
     							return true;
     						else
     							board[i][j] = 0;
